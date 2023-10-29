@@ -31,7 +31,7 @@ export default class Slot {
     this.spinButton = document.getElementById("spin");
     this.spinButton.addEventListener("click", () => this.spin());
 
-    this.autoPlayCheckbox = document.getElementById("autoplay");
+    // this.autoPlayCheckbox = document.getElementById("autoplay");
 
     if (config.inverted) {
       this.container.classList.add("inverted");
@@ -71,8 +71,8 @@ export default class Slot {
 
     this.config.onSpinEnd?.(symbols);
 
-    if (this.autoPlayCheckbox.checked) {
-      return window.setTimeout(() => this.spin(), 200);
-    }
+    // if (this.autoPlayCheckbox.checked) {
+    //   return window.setTimeout(() => this.spin(), 200);
+    // }
   }
 }

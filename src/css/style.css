@@ -1,8 +1,8 @@
 body {
-  width: 100vw;
-  height: 100vh;
-  padding: 1rem;
-  background-image: url("../assets/bg.jpg");
+  /* width: 100vw;
+  height: 100vh; */
+  /* padding: 1rem; */
+  background-image: url("https://i.pinimg.com/600x315/ba/b3/ff/bab3ff4bf0ac43ba7d77fc354cd1b9ab.jpg");
   background-size: cover;
   display: flex;
   align-items: center;
@@ -12,16 +12,20 @@ body {
 
 @media only screen and (max-width: 1200px) {
   body {
-    background-image: url("../assets/bg_small.jpg");
+    background-image: url("https://i.pinimg.com/600x315/ba/b3/ff/bab3ff4bf0ac43ba7d77fc354cd1b9ab.jpg");
   }
 }
 
 #reels {
   display: flex;
   width: 100vw;
-  height: calc((3 / 5) * 100vw);
-  max-height: calc(90vh - 50px - 40px);
-  max-width: calc((5 / 3) * (90vh - 50px - 40px));
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  justify-content: center;
+  height: calc((8 / 10) * 100vw);
+  max-height: calc(90vh - 50px - 80px);
+  max-width: calc((7 / 3) * (90vh - 50px - 40px));
+  column-gap: 100px;
 }
 
 .reel {
@@ -29,6 +33,8 @@ body {
   width: 20%;
   height: 100%;
   position: relative;
+  border: 15px solid gray;
+  border-radius: 15px;
 }
 
 .reel > .icons {
@@ -44,7 +50,7 @@ body {
   transform: translate3d(0, 0, 0);
 }
 
-#controls {
+/* #controls {
   background-color: rgba(255, 255, 255, 0.9);
   height: 50px;
   display: flex;
@@ -61,8 +67,16 @@ body {
 
 #controls label input {
   margin-right: 5px;
+} */
+#controls img {
+  /* background : url("https://firebasestorage.googleapis.com/v0/b/bohratraders-b6570.appspot.com/o/pngegg.png?alt=media&token=af1a2d08-c2a1-4fe9-b0d6-9cd5961e2479&_gl=1*gs5vpt*_ga*MTgwMjg5ODczLjE2OTU5MjQwMzc.*_ga_CW55HF8NVT*MTY5ODU2MjgwMi4zLjEuMTY5ODU2Mjg1Ny41LjAuMA.."); */
+  width: 300px;
+  height: calc((1 / 10) * 100vw);
+  cursor: pointer;
 }
-
+#title {
+  height: calc((1 / 10) * 100vw);
+}
 input[type="checkbox"] {
   width: 40px;
   height: 40px;
@@ -72,6 +86,7 @@ input[type="checkbox"] {
   color: #d5ad6d;
   font-size: 40px;
   text-align: center;
+  margin-bottom: 50px;
 }
 
 #slot.inverted .reel {
